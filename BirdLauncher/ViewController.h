@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreMotion/CoreMotion.h>
+#import "SRWebSocket.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIAccelerometerDelegate,SRWebSocketDelegate>
+{
+    SRWebSocket *socket;
+}
+
+@property (weak, nonatomic) IBOutlet UIImageView *resultImage;
+
 
 @end

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB20A6E018DD8AD6007C06F3 /* hackathon_gun2.png in Resources */ = {isa = PBXBuildFile; fileRef = AB20A6DF18DD8AD6007C06F3 /* hackathon_gun2.png */; };
+		AB20A6E218DD90D9007C06F3 /* lose.png in Resources */ = {isa = PBXBuildFile; fileRef = AB20A6E118DD90D9007C06F3 /* lose.png */; };
+		AB20A6E418DD90ED007C06F3 /* win.png in Resources */ = {isa = PBXBuildFile; fileRef = AB20A6E318DD90ED007C06F3 /* win.png */; };
 		AB8E60ED18DD45200030E1A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E60EC18DD45200030E1A6 /* Foundation.framework */; };
 		AB8E60EF18DD45200030E1A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E60EE18DD45200030E1A6 /* CoreGraphics.framework */; };
 		AB8E60F118DD45200030E1A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E60F018DD45200030E1A6 /* UIKit.framework */; };
@@ -21,6 +24,18 @@
 		AB8E610E18DD45200030E1A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E60F018DD45200030E1A6 /* UIKit.framework */; };
 		AB8E611618DD45200030E1A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB8E611418DD45200030E1A6 /* InfoPlist.strings */; };
 		AB8E611818DD45200030E1A6 /* BirdLauncherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8E611718DD45200030E1A6 /* BirdLauncherTests.m */; };
+		AB8E612218DD46AB0030E1A6 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E612118DD46AB0030E1A6 /* CoreAudio.framework */; };
+		AB8E612418DD46B70030E1A6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E612318DD46B70030E1A6 /* AudioToolbox.framework */; };
+		AB8E612718DD46EF0030E1A6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E612618DD46EF0030E1A6 /* MediaPlayer.framework */; };
+		AB8E612A18DD47440030E1A6 /* VincluLed.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8E612918DD47440030E1A6 /* VincluLed.m */; };
+		AB8E612C18DD5BE80030E1A6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E612B18DD5BE80030E1A6 /* CoreMotion.framework */; };
+		AB8E613018DD62480030E1A6 /* hackathon_gun1.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8E612F18DD62480030E1A6 /* hackathon_gun1.png */; };
+		AB8E613918DD66DC0030E1A6 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = AB8E613218DD66DC0030E1A6 /* base64.c */; };
+		AB8E613A18DD66DC0030E1A6 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8E613518DD66DC0030E1A6 /* NSData+SRB64Additions.m */; };
+		AB8E613B18DD66DC0030E1A6 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8E613818DD66DC0030E1A6 /* SRWebSocket.m */; };
+		AB8E613D18DD67170030E1A6 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E613C18DD67170030E1A6 /* libicucore.dylib */; };
+		AB8E613F18DD67240030E1A6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E613E18DD67230030E1A6 /* CFNetwork.framework */; };
+		AB8E614118DD67320030E1A6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E614018DD67320030E1A6 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB20A6DF18DD8AD6007C06F3 /* hackathon_gun2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hackathon_gun2.png; sourceTree = "<group>"; };
+		AB20A6E118DD90D9007C06F3 /* lose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lose.png; sourceTree = "<group>"; };
+		AB20A6E318DD90ED007C06F3 /* win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win.png; sourceTree = "<group>"; };
 		AB8E60E918DD45200030E1A6 /* BirdLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8E60EC18DD45200030E1A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB8E60EE18DD45200030E1A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +71,23 @@
 		AB8E611318DD45200030E1A6 /* BirdLauncherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BirdLauncherTests-Info.plist"; sourceTree = "<group>"; };
 		AB8E611518DD45200030E1A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB8E611718DD45200030E1A6 /* BirdLauncherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirdLauncherTests.m; sourceTree = "<group>"; };
+		AB8E612118DD46AB0030E1A6 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		AB8E612318DD46B70030E1A6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AB8E612618DD46EF0030E1A6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		AB8E612818DD47440030E1A6 /* VincluLed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VincluLed.h; sourceTree = "<group>"; };
+		AB8E612918DD47440030E1A6 /* VincluLed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VincluLed.m; sourceTree = "<group>"; };
+		AB8E612B18DD5BE80030E1A6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		AB8E612F18DD62480030E1A6 /* hackathon_gun1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hackathon_gun1.png; sourceTree = "<group>"; };
+		AB8E613218DD66DC0030E1A6 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		AB8E613318DD66DC0030E1A6 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		AB8E613418DD66DC0030E1A6 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		AB8E613518DD66DC0030E1A6 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SRB64Additions.m"; sourceTree = "<group>"; };
+		AB8E613618DD66DC0030E1A6 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		AB8E613718DD66DC0030E1A6 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		AB8E613818DD66DC0030E1A6 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		AB8E613C18DD67170030E1A6 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		AB8E613E18DD67230030E1A6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AB8E614018DD67320030E1A6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +95,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8E614118DD67320030E1A6 /* Security.framework in Frameworks */,
+				AB8E613F18DD67240030E1A6 /* CFNetwork.framework in Frameworks */,
+				AB8E613D18DD67170030E1A6 /* libicucore.dylib in Frameworks */,
+				AB8E612C18DD5BE80030E1A6 /* CoreMotion.framework in Frameworks */,
+				AB8E612718DD46EF0030E1A6 /* MediaPlayer.framework in Frameworks */,
+				AB8E612418DD46B70030E1A6 /* AudioToolbox.framework in Frameworks */,
+				AB8E612218DD46AB0030E1A6 /* CoreAudio.framework in Frameworks */,
 				AB8E60EF18DD45200030E1A6 /* CoreGraphics.framework in Frameworks */,
 				AB8E60F118DD45200030E1A6 /* UIKit.framework in Frameworks */,
 				AB8E60ED18DD45200030E1A6 /* Foundation.framework in Frameworks */,
@@ -101,6 +143,13 @@
 		AB8E60EB18DD45200030E1A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB8E614018DD67320030E1A6 /* Security.framework */,
+				AB8E613E18DD67230030E1A6 /* CFNetwork.framework */,
+				AB8E613C18DD67170030E1A6 /* libicucore.dylib */,
+				AB8E612B18DD5BE80030E1A6 /* CoreMotion.framework */,
+				AB8E612618DD46EF0030E1A6 /* MediaPlayer.framework */,
+				AB8E612318DD46B70030E1A6 /* AudioToolbox.framework */,
+				AB8E612118DD46AB0030E1A6 /* CoreAudio.framework */,
 				AB8E60EC18DD45200030E1A6 /* Foundation.framework */,
 				AB8E60EE18DD45200030E1A6 /* CoreGraphics.framework */,
 				AB8E60F018DD45200030E1A6 /* UIKit.framework */,
@@ -117,6 +166,13 @@
 				AB8E60FE18DD45200030E1A6 /* Main.storyboard */,
 				AB8E610118DD45200030E1A6 /* ViewController.h */,
 				AB8E610218DD45200030E1A6 /* ViewController.m */,
+				AB8E612818DD47440030E1A6 /* VincluLed.h */,
+				AB8E612918DD47440030E1A6 /* VincluLed.m */,
+				AB8E612F18DD62480030E1A6 /* hackathon_gun1.png */,
+				AB20A6DF18DD8AD6007C06F3 /* hackathon_gun2.png */,
+				AB20A6E318DD90ED007C06F3 /* win.png */,
+				AB20A6E118DD90D9007C06F3 /* lose.png */,
+				AB8E613118DD66DC0030E1A6 /* SocketRocket */,
 				AB8E610418DD45200030E1A6 /* Images.xcassets */,
 				AB8E60F318DD45200030E1A6 /* Supporting Files */,
 			);
@@ -150,6 +206,20 @@
 				AB8E611418DD45200030E1A6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB8E613118DD66DC0030E1A6 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				AB8E613218DD66DC0030E1A6 /* base64.c */,
+				AB8E613318DD66DC0030E1A6 /* base64.h */,
+				AB8E613418DD66DC0030E1A6 /* NSData+SRB64Additions.h */,
+				AB8E613518DD66DC0030E1A6 /* NSData+SRB64Additions.m */,
+				AB8E613618DD66DC0030E1A6 /* SocketRocket-Prefix.pch */,
+				AB8E613718DD66DC0030E1A6 /* SRWebSocket.h */,
+				AB8E613818DD66DC0030E1A6 /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +269,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Naohiro Yasukawa";
 				TargetAttributes = {
+					AB8E60E818DD45200030E1A6 = {
+						DevelopmentTeam = HY66YUJZ9P;
+					};
 					AB8E610918DD45200030E1A6 = {
 						TestTargetID = AB8E60E818DD45200030E1A6;
 					};
@@ -228,6 +301,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8E613018DD62480030E1A6 /* hackathon_gun1.png in Resources */,
+				AB20A6E018DD8AD6007C06F3 /* hackathon_gun2.png in Resources */,
+				AB20A6E218DD90D9007C06F3 /* lose.png in Resources */,
+				AB20A6E418DD90ED007C06F3 /* win.png in Resources */,
 				AB8E610518DD45200030E1A6 /* Images.xcassets in Resources */,
 				AB8E60F718DD45200030E1A6 /* InfoPlist.strings in Resources */,
 				AB8E610018DD45200030E1A6 /* Main.storyboard in Resources */,
@@ -249,7 +326,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8E613A18DD66DC0030E1A6 /* NSData+SRB64Additions.m in Sources */,
+				AB8E613918DD66DC0030E1A6 /* base64.c in Sources */,
+				AB8E612A18DD47440030E1A6 /* VincluLed.m in Sources */,
 				AB8E610318DD45200030E1A6 /* ViewController.m in Sources */,
+				AB8E613B18DD66DC0030E1A6 /* SRWebSocket.m in Sources */,
 				AB8E60FD18DD45200030E1A6 /* AppDelegate.m in Sources */,
 				AB8E60F918DD45200030E1A6 /* main.m in Sources */,
 			);
@@ -376,10 +457,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BirdLauncher/BirdLauncher-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/SocketRocket",
+				);
 				INFOPLIST_FILE = "BirdLauncher/BirdLauncher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,10 +484,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BirdLauncher/BirdLauncher-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/SocketRocket",
+				);
 				INFOPLIST_FILE = "BirdLauncher/BirdLauncher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -456,6 +565,7 @@
 				AB8E611D18DD45200030E1A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB8E611E18DD45200030E1A6 /* Build configuration list for PBXNativeTarget "BirdLauncherTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +574,7 @@
 				AB8E612018DD45200030E1A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
