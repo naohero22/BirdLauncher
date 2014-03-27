@@ -11,20 +11,12 @@
 
 @interface ViewController (){
     VincluLed* waveUtil;
-    int start;
-    int count;
-    int launch;
     int sendFrag;
 }
 
 @end
 
 @implementation ViewController
-
-int start = 0;
-int count = 0;
-int launch = 0;
-int sendFrag = 0;
 
 
 - (void)viewDidLoad
@@ -33,6 +25,9 @@ int sendFrag = 0;
     [super viewDidLoad];
     waveUtil = [[VincluLed alloc] initialize];
 
+    //WebSocket送信フラグの初期化
+    sendFrag = 0;
+    
     //加速度センサーの初期化
     UIAccelerometer *ac =[UIAccelerometer sharedAccelerometer];
     ac.updateInterval = 0.02;
@@ -99,35 +94,6 @@ int sendFrag = 0;
 //WebSocketで受信するメッセージ
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message{
     NSLog(@"didReceiveMessage: %@", [message description]);
-    
-    /*
-    NSData *jsonData = message;
-    NSError *error = nil;
-    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[jsonData dataUsingEncoding:NSUTF8StringEncoding] options:0 error:&error];
-    
-    NSString *userID = [[dic objectForKey:@"user"] objectForKey:@"id"];
- 
-    NSString *jsonString =[message description];
-    NSData *jsonData = [jsonString dataUsingEncoding:NSUnicodeStringEncoding];
-    NSError *error;
-    NSArray *array = [[NSJSONSerialization JSONObjectWithData:jsonData
-                                                     options:NSJSONReadingAllowFragments
-                                                       error:&error];
-
-    NSMutableArray *results = [[NSMutableArray alloc] init];
-    for (NSDictionary *obj in array)
-    {
-        NSString *str1 = [obj objectForKey:@"id"];
-    }
-    
-    NSString * str2 = @"A";
-
-    if(str1 == str2){
-    self.firstLabel.text  = @"YOU WIN!";
-    }else{
-    self.firstLabel.text  = @"YOU LOSE!";
-    }
-    */
 }
 
 
@@ -138,9 +104,6 @@ int sendFrag = 0;
 - (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean{
     NSLog(@"close");
 }
-
-
-
 
 
 
