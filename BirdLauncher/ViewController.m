@@ -38,12 +38,13 @@ int sendFrag = 0;
     ac.updateInterval = 0.02;
     ac.delegate = self;
     
+    //WebSocketにつなげる。(OPENする)
     NSURL *url = [NSURL URLWithString:@"ws://nodejs.moe.hm:8899"];
     socket = [[SRWebSocket alloc] initWithURLRequest:[NSURLRequest requestWithURL:url]];
     socket.delegate = self;
     [socket open];
     
-    //画像の表示
+    //結果の画像をデフォルト非表示にする。
     self.resultImage.hidden = YES;
     
 	// Do any additional setup after loading the view, typically from a nib.
@@ -67,21 +68,23 @@ int sendFrag = 0;
     //NSLog(@"y: %g", acceleration.y);
     //NSLog(@"z: %g", acceleration.z);
     
-    //iPhoneを横に向ける。
+    //iPhoneを横に向けるとウィンクルが光る。
     if (acceleration.x > 0.6){
         waveUtil.frequencyL = 50;
         waveUtil.frequencyR = 3;
         [waveUtil start];
+        
+        //結果画像を表示する。
         self.resultImage.hidden = NO;
         
+        //一度だけ、WebSocketに送る
         if (sendFrag == 0){
         //WebSocketに送信する。実際に送るのは{"id":"1"}だが、\で"をエスケープしている。
-        //[socket send:@"{\"id\":\"1\"}"];
-        //[socket send:@"A"];
-            sendFrag++;
+        [socket send:@"{\"id\":\"1\"}"];
+        sendFrag++;
         }
         
-    //iPhoneを下に向ける。
+    //iPhoneを下に向けるとウィンクルが消える。
     }else if ( acceleration.x <= 0.6){
         self.resultImage.hidden = YES;
         [waveUtil stop];
@@ -101,11 +104,9 @@ int sendFrag = 0;
     NSData *jsonData = message;
     NSError *error = nil;
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[jsonData dataUsingEncoding:NSUTF8StringEncoding] options:0 error:&error];
-    NSLog
     
-    //NSString *userID = [[dic objectForKey:@"user"] objectForKey:@"id"];
+    NSString *userID = [[dic objectForKey:@"user"] objectForKey:@"id"];
  
-    
     NSString *jsonString =[message description];
     NSData *jsonData = [jsonString dataUsingEncoding:NSUnicodeStringEncoding];
     NSError *error;
