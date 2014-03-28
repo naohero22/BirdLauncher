@@ -9,10 +9,13 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+@synthesize playerName;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.playerName = [[NSString alloc] init];
     return YES;
 }
 							

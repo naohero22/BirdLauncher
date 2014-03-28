@@ -10,6 +10,7 @@
 		AB20A6E018DD8AD6007C06F3 /* hackathon_gun2.png in Resources */ = {isa = PBXBuildFile; fileRef = AB20A6DF18DD8AD6007C06F3 /* hackathon_gun2.png */; };
 		AB20A6E218DD90D9007C06F3 /* lose.png in Resources */ = {isa = PBXBuildFile; fileRef = AB20A6E118DD90D9007C06F3 /* lose.png */; };
 		AB20A6E418DD90ED007C06F3 /* win.png in Resources */ = {isa = PBXBuildFile; fileRef = AB20A6E318DD90ED007C06F3 /* win.png */; };
+		AB415AFE18E482C800D2D21C /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB415AFD18E482C800D2D21C /* StartViewController.m */; };
 		AB8E60ED18DD45200030E1A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E60EC18DD45200030E1A6 /* Foundation.framework */; };
 		AB8E60EF18DD45200030E1A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E60EE18DD45200030E1A6 /* CoreGraphics.framework */; };
 		AB8E60F118DD45200030E1A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E60F018DD45200030E1A6 /* UIKit.framework */; };
@@ -52,6 +53,8 @@
 		AB20A6DF18DD8AD6007C06F3 /* hackathon_gun2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hackathon_gun2.png; sourceTree = "<group>"; };
 		AB20A6E118DD90D9007C06F3 /* lose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lose.png; sourceTree = "<group>"; };
 		AB20A6E318DD90ED007C06F3 /* win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win.png; sourceTree = "<group>"; };
+		AB415AFC18E482C800D2D21C /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		AB415AFD18E482C800D2D21C /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		AB8E60E918DD45200030E1A6 /* BirdLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8E60EC18DD45200030E1A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB8E60EE18DD45200030E1A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -164,6 +167,8 @@
 				AB8E60FB18DD45200030E1A6 /* AppDelegate.h */,
 				AB8E60FC18DD45200030E1A6 /* AppDelegate.m */,
 				AB8E60FE18DD45200030E1A6 /* Main.storyboard */,
+				AB415AFC18E482C800D2D21C /* StartViewController.h */,
+				AB415AFD18E482C800D2D21C /* StartViewController.m */,
 				AB8E610118DD45200030E1A6 /* ViewController.h */,
 				AB8E610218DD45200030E1A6 /* ViewController.m */,
 				AB8E612818DD47440030E1A6 /* VincluLed.h */,
@@ -331,6 +336,7 @@
 				AB8E612A18DD47440030E1A6 /* VincluLed.m in Sources */,
 				AB8E610318DD45200030E1A6 /* ViewController.m in Sources */,
 				AB8E613B18DD66DC0030E1A6 /* SRWebSocket.m in Sources */,
+				AB415AFE18E482C800D2D21C /* StartViewController.m in Sources */,
 				AB8E60FD18DD45200030E1A6 /* AppDelegate.m in Sources */,
 				AB8E60F918DD45200030E1A6 /* main.m in Sources */,
 			);
